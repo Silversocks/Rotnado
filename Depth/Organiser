@@ -1,0 +1,29 @@
+import os
+import subprocess
+import datetime
+
+def move(dest):
+
+    os.replace(os.getcwd,dest)
+
+def checked():
+    for f in os.listdir(os.getcwd()):
+        if f[-5]==0:
+            continue
+        else:
+            if f[-5]=="g":
+                dest="C:\Users\aweso\Desktop\my gamees"
+                move(dest)
+            elif f[-5]=="p":
+                dest="C:\Programmingstuff"
+            elif f[-5]=="m":
+                dest="C:\Users\aweso\Videos\Movies"
+            elif f[-5]=="t":
+                c=0
+                return c
+            else:
+                print("program working in the background")
+
+while (True):
+    datetime.wait("500")
+    checked()
