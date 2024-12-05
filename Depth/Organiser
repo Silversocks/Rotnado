@@ -27,3 +27,4 @@ def checked():
 while (True):
     datetime.wait("500")
     checked()
+    move(dest)
